@@ -1,7 +1,7 @@
-// música no fundo
+// song
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Quer ouvir uma música no background?',
+        title: 'Que tal ouvir uma musga de fundo?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -18,10 +18,9 @@ window.addEventListener('load', () => {
     });
 });
 
-
-// animation timeline
+// animation
 const animationTimeline = () => {
-    // split chars that needs to be animated individually
+
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -264,7 +263,7 @@ const animationTimeline = () => {
         "+=1"
     );
 
-    // Restart Animation on click
+    // restart
     const replyBtn = document.getElementById("replay");
     replyBtn.addEventListener("click", () => {
         tl.restart();
